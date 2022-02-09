@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>M.Gridz</title>
+
+    <style>
+        body{
+            background-color: steelblue;
+        }
+        .wrapper > .w1 {
+            background-color: lightgrey;
+            border: solid #000;
+        }
+
+        .w2 > div {
+            background: #eee;
+            border: solid #000;
+        }
+
+        .w2 > .box1 > div {
+            border: solid #000;
+            margin: 0.1em;
+            background-color: lightgrey;
+        }
+
+        .w2 > .box2 > div {
+            border: solid #000;
+            margin: 0.1em;
+            background-color: #bbb;
+        }
+
+        /* .wrapper > div:nth-child(even){
+            background: #bbb;
+        } */
+
+        .w1{
+            display: grid;
+        }
+
+        .w2{
+            margin-top: 0.5em;
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            grid-gap: 0.5em;
+            grid-auto-rows: minmax(100px,auto);
+        }
+
+        .box1{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-auto-rows: auto;
+        }
+
+         .box2{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-auto-rows: auto;
+        } 
+        
+        #bn{
+            color: rgb(255, 0, 0);
+            text-decoration: underline dotted;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class = "w1">
+            <h2 id ="bn">BREAKING NEWS !!!</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio praesentium eligendi quasi, deleniti autem quia eius a dolorum optio eveniet!</p>
+        </div>
+        <div class="w2">
+            <div class = "box1">
+                <div><h2>CEO Zero Returns</h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita minus eaque in, reprehenderit accusantium optio cum minima est ex quia et fugiat velit unde soluta amet, rem sint! Iure, vitae.</div>
+                <div><h2>Incresing Niggas</h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam facere tempore aspernatur quidem! Laboriosam nihil consequatur voluptatem libero ipsum natus beatae dolore. Totam quidem deserunt eveniet, quod earum qui quos incidunt similique officia labore repellendus minima, praesentium perferendis distinctio optio nostrum quis obcaecati omnis reiciendis.</div>
+                <div><h2>Prison escape</h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis sed exercitationem similique iusto voluptatibus ullam debitis repellat aut praesentium expedita. Impedit deleniti incidunt tempore labore accusantium, possimus accusamus veritatis ipsam, eaque odit voluptas, dolores ducimus!</div>
+                <div><h2>Schools exams</h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, veritatis asperiores. Error esse assumenda cupiditate!</div>
+                <div><h2>Apple Bankrupt</h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore consequuntur officiis doloribus totam ab, consectetur iure tempora adipisci ipsum atque deleniti a? Voluptates fuga recusandae autem cumque temporibus, tempora quas perferendis, odit asperiores magni eius libero? Harum quia aliquid doloribus in perferendis inventore, nulla eligendi?</div>
+            </div>
+            <div class = "box2">
+                <div>
+                    <h2>AMD Zen3 Cpu reveal</h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed et error at aliquam obcaecati quidem nesciunt dicta tempora alias? Itaque excepturi quo ipsam debitis totam quas quis optio quisquam ea. Iste ad, accusantium vero nam ea cum asperiores similique doloremque.
+                </div>
+                <div>
+                    <h2>Intel fall behind AMD</h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum est amet veritatis alias repellendus quidem, animi impedit autem aperiam omnis quo quisquam, odio quibusdam suscipit fugiat enim distinctio quia voluptatum iusto quod, esse id commodi. Modi magnam ullam accusantium suscipit repellendus, eligendi vel, laboriosam corrupti, assumenda voluptatum odio eveniet eius.
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+
+</body>
+</html>

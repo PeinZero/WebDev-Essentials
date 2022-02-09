@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $('a[data-toggle="tab"]').on('show.bs.tab', function(e) {
+        localStorage.setItem('activeTab', $(e.target).attr('href'));
+      });
+      var activeTab = localStorage.getItem('activeTab');
+      if(activeTab){
+        $('#myTab a[href="' + activeTab + '"]').tab('show');
+      }
+    });
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="mainDivPP">
+        <div class="side">
+            
+            
+            <ul id="sideul">
+              <li class = 'sideli active'> <a href="a1.html">Profile</a></li>
+              <li class = 'sideli'> <a href="#sectionA">Photo</a></li>
+              <li class = 'sideli'> <a href="#">Account</a></li>
+              <li class = 'sideli'> <a href="#">Payment Method</a></li>
+              <li class = 'sideli'> <a href="#">Privacy</a></li>
+              <li class = 'sideli'> <a href="#">Deactivate Account</a></li>
+            </ul>
+
+            <script>
+                // Add active class to the current button (highlight it)
+                var header = document.getElementById("sideul");
+                var selected = header.getElementsByClassName("sideli");
+                for (var i = 0; i < selected.length; i++) {
+                  selected[i].addEventListener("click", function() {
+                    var current = document.getElementsByClassName("active");
+                    current[0].className = current[0].className.replace(" active", "");
+                    this.className += " active";
+                  });
+                }
+                </script>
+            
+        </div>
+      </div>
+</body>
+</html>

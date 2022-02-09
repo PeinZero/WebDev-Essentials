@@ -1,0 +1,33 @@
+.side ul{
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.side li{
+    color: #cacbcc;
+    /* font-weight: 700; */
+    display: block!important;
+    margin: 0!important;
+}
+.side a{
+    color: #007791;
+    display: block;
+    text-decoration: none;
+    padding: 1px 15px;
+}
+
+.active{
+    background-color: #888888;
+}
+
+/* .side li:hover{
+    background-color: #888888;
+    text-decoration: none;
+}
+
+.side a:hover{
+    text-decoration: none;
+    color:white;
+} */

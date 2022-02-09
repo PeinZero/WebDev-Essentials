@@ -1,0 +1,39 @@
+html{
+    font-family: 'Roboto', sans-serif;
+}
+.wrapper{
+    width: 100%;
+    margin: 40px 0;
+}
+
+.name_intro{
+    width: 95%;
+    margin-left: 2.5%;
+}
+.name_intro .name{
+    font-size: 36px;
+    font-weight: bolder;
+}
+.name_intro .designation{
+    font-size: 23px;
+    color: rgb(129, 128, 128);
+    margin: 5px 0;
+}
+.name_intro .introduction{
+    font-size: 17px;
+}
+
+.contact{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    /* grid-template-columns: repeat(2,1fr); */
+    /* grid-gap: 20px; */
+    background-color: rgba(156, 156, 156,0.5);
+    padding: 10px 0;
+    padding-left: 2.5%;
+    font-size: 17px;
+}
+
+
+

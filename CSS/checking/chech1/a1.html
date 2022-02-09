@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="mainDivPP">
+        <div class="side">
+            
+            
+            <ul id="sideul">
+              <li class = 'sideli'> <a href="a1.html">Profile</a></li>
+              <li class = 'sideli'> <a href="#">Photo</a></li>
+              <li class = 'sideli'> <a href="#">Account</a></li>
+              <li class = 'sideli'> <a href="#">Payment Method</a></li>
+              <li class = 'sideli'> <a href="#">Privacy</a></li>
+              <li class = 'sideli'> <a href="#">Deactivate Account</a></li>
+            </ul>
+
+            <script>
+                // Add active class to the current button (highlight it)
+                var header = document.getElementById("sideul");
+                var selected = header.getElementsByClassName("sideli");
+                for (var i = 0; i < selected.length; i++) {
+                  selected[i].addEventListener("click", function() {
+                    var current = document.getElementsByClassName("active");
+                    current[0].className = current[0].className.replace(" active", "");
+                    this.className += " active";
+                  });
+                }
+                </script>
+            
+        </div>
+</body>
+</html>

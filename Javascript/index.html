@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Templ</title>
+</head>
+<body>
+    <h1>This is a template one</h1>
+    <div>
+        <p>use this template everywhere else if you want</p>
+    </div>
+    <hr>
+    <div>
+        <p>sm lists: </p>
+        <ul id="mylist">
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+        </ul>
+    </div>
+
+    <div>
+        <details open>
+            <summary>Note</summary>
+            <p>This website is currently under development.</p>
+            <progress value="10" max="100"></progress><br>
+            <caption>progress</caption>
+          </details> 
+    </div>
+    <button class="btnn">
+        click me
+    </button>
+    <!-- add java scrip here !! -->
+    <!-- write in scripts if using js in html file -->
+    <script>
+
+        document.querySelector(".btnn").addEventListener("click" , () =>{
+           window.open('temp2.html','_blank')
+        })
+        //alert("hey man this is just an alert.")
+    </script>
+
+    <!-- calling js file -->
+    <!-- <script src = "jsfile.js" > </script> -->
+    <!-- <script src = "promises.js" > </script> -->
+    <!-- <script src = "callbacks.js" > </script> -->
+    
+
+</body>
+</html>

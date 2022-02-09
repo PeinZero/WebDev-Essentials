@@ -1,0 +1,118 @@
+
+.mainDivPP{
+    margin-top: 50px;
+    border: solid #eee;
+    width: 80%;
+    max-width: 80%;
+    min-width: 80%;
+    margin-left: 10%;
+    height: 100%;
+    max-height: 100%;
+    display: grid;
+    grid-template-areas: 
+        'side contentx contentx contentx contentx contentx'
+        'side contentx contentx contentx contentx contentx'
+        'side contentx contentx contentx contentx contentx'
+        'side contentx contentx contentx contentx contentx'
+        'side contentx contentx contentx contentx contentx'
+        ;
+}
+
+.side{
+    grid-area: side;
+    border-right: solid #eee;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.side ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.side a{
+   display: block;
+   color: rgb(126, 172, 190);
+   padding: 15px;
+   margin-top: 0;
+   margin-bottom: 0;
+   margin-left: 2%;
+   margin-right: 2%;
+   height: 5px;
+   text-decoration: none;
+   justify-content: center;
+}
+
+.side a:hover{
+    background-color: #bbb;
+    color: white;
+}
+
+.side li:first-child{
+    margin-top: 0;
+}
+
+.side .up{
+    margin-top: 20px;
+    height: 30%;
+    max-height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 0;
+
+}
+
+.side #uname{
+    margin-top: 10px;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.side .down{
+    margin-top: 0;
+}
+
+
+.content{
+    grid-area: contentx;
+    /* border: solid #eee; */
+    width: 100%;
+    display: grid;
+    grid-template-rows: 2fr 7fr 1fr;
+    grid-gap: 0;
+}
+
+.content1{
+    display: flex;
+    /* border: solid #eee; */
+    text-align: center;
+    justify-content: center;
+}
+.content2{
+    display: grid;
+    grid-template-rows: repeat(autofit,minmax(400px,1fr));
+    border-top: solid #eee;
+    border-bottom: solid #eee;
+}
+.content3{
+    display: flex;
+    /* border: solid #eee; */
+    text-align: center;
+    justify-content: center;
+}
+
+.content1 .heading{
+    font-size: 40px;
+}
+
+.content3 .btn{
+    background-color: red;
+    color: white;
+    font-size: 10px;
+    width: 130px;
+    margin:5px;
+}
